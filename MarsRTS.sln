@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRTS", "MarsRTS\MarsRTS\MarsRTS.csproj", "{1691EA69-58A8-4461-91B5-441811095F8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRTSContent", "MarsRTS\MarsRTSContent\MarsRTSContent.contentproj", "{2716DD1B-139C-42BB-9575-BD0819BE48CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RTSAssetData", "RTSAssetData\RTSAssetData.csproj", "{9E72E2CC-D300-4F36-97FC-9BCD4045C71F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1691EA69-58A8-4461-91B5-441811095F8C}.Debug|x86.ActiveCfg = Debug|x86
+		{1691EA69-58A8-4461-91B5-441811095F8C}.Debug|x86.Build.0 = Debug|x86
+		{1691EA69-58A8-4461-91B5-441811095F8C}.Release|x86.ActiveCfg = Release|x86
+		{1691EA69-58A8-4461-91B5-441811095F8C}.Release|x86.Build.0 = Release|x86
+		{2716DD1B-139C-42BB-9575-BD0819BE48CC}.Debug|x86.ActiveCfg = Debug|x86
+		{2716DD1B-139C-42BB-9575-BD0819BE48CC}.Release|x86.ActiveCfg = Release|x86
+		{9E72E2CC-D300-4F36-97FC-9BCD4045C71F}.Debug|x86.ActiveCfg = Debug|x86
+		{9E72E2CC-D300-4F36-97FC-9BCD4045C71F}.Debug|x86.Build.0 = Debug|x86
+		{9E72E2CC-D300-4F36-97FC-9BCD4045C71F}.Release|x86.ActiveCfg = Release|x86
+		{9E72E2CC-D300-4F36-97FC-9BCD4045C71F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

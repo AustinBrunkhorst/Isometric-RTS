@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<XnaContent>
+  <Asset Type="RTSAssetData.Buildings.BuildingProperties">
+    <Type>ShortRangeTower</Type>
+    <Description>Short Range Tower</Description>
+    <IconTexture>HUD/Icons/Buildings/ShortRangeTower</IconTexture>
+    <Category>Defense</Category>
+    <MaxLevel>7</MaxLevel>
+    <MinRange>82</MinRange>
+    <GridOffset>-17 -85</GridOffset>
+    <DepthPointOffset>74 103</DepthPointOffset>
+    <HealthBarOffset>11 -56</HealthBarOffset>
+    <BarrelOffset>97 65</BarrelOffset>
+    <HealthBarSize>100 8</HealthBarSize>
+    <GridBounds>
+      0 0 4 4
+    </GridBounds>
+    <ScreenRectangle>
+      73 55 50 51
+    </ScreenRectangle>
+    <Animations>
+      <Animation>
+        <Key>Idle</Key>
+        <Value>
+          <TexturePath>Buildings/Textures/ShortRangeTower.Animation</TexturePath>
+          <FrameSize>171 171</FrameSize>
+          <FrameCount>36</FrameCount>
+          <FrameDuration>0</FrameDuration>
+          <IsLooping>false</IsLooping>
+        </Value>
+      </Animation>
+      <Animation>
+        <Key>Shadow</Key>
+        <Value>
+          <TexturePath>Buildings/Textures/ShortRangeTower.Shadow</TexturePath>
+          <FrameSize>171 171</FrameSize>
+          <FrameCount>36</FrameCount>
+          <FrameDuration>0</FrameDuration>
+          <IsLooping>false</IsLooping>
+        </Value>
+      </Animation>
+      <Animation>
+        <Key>Bullet</Key>
+        <Value>
+          <TexturePath>bullet</TexturePath>
+          <FrameSize>6 6</FrameSize>
+          <FrameDuration>0</FrameDuration>
+          <IsLooping>false</IsLooping>
+        </Value>
+      </Animation>
+    </Animations>
+    <Sounds>
+      <Sound>
+        <Key>Shoot</Key>
+        <Value>
+          <SoundPath>Buildings/Sounds/ShortRangeTower.Shoot</SoundPath>
+        </Value>
+      </Sound>
+    </Sounds>
+    <InventoryColor>FF8ECE5A</InventoryColor>
+    <BarrelOffsets>
+      97 36
+      110 37
+      122 38
+      134 41
+      144 45
+      153 50
+      160 55
+      165 60
+      168 67
+      168 73
+      168 79
+      165 85
+      159 91
+      152 96
+      144 100
+      133 104
+      122 107
+      110 108
+      97 109
+      85 108
+      73 106
+      62 104
+      51 100
+      43 96
+      35 91
+      30 85
+      27 79
+      26 73
+      27 67
+      29 61
+      35 55
+      41 50
+      50 45
+      61 41
+      72 38
+      85 36
+    </BarrelOffsets>
+    <UpgradeCosts>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+    </UpgradeCosts>
+    <UpgradeData>
+      <Upgrade>
+        <Range>400</Range>
+        <DefenseInterval>50</DefenseInterval>
+        <BulletSpeed>1200</BulletSpeed>
+        <Damage>25</Damage>
+        <MaxHealth>100</MaxHealth>
+      </Upgrade>
+      <Upgrade>
+        <Range>35</Range>
+        <Damage>25</Damage>
+      </Upgrade>
+      <Upgrade>
+        <Range>40</Range>
+        <Damage>50</Damage>
+      </Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+    </UpgradeData>
+  </Asset>
+</XnaContent>

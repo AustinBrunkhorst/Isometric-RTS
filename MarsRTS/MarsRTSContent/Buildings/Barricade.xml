@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<XnaContent>
+  <Asset Type="RTSAssetData.Buildings.BuildingProperties">
+    <Type>Barricade</Type>
+    <Description>Barricade</Description>
+    <IconTexture>HUD/Icons/Buildings/Barricade</IconTexture>
+    <Category>Defense</Category>
+    <MaxLevel>5</MaxLevel>
+    <GridOffset>-10 -19</GridOffset>
+    <DepthPointOffset>13 27</DepthPointOffset>
+    <HealthBarOffset>2 -6</HealthBarOffset>
+    <HealthBarSize>28 4</HealthBarSize>
+    <GridBounds>
+      0 0 1 1
+    </GridBounds>
+    <ScreenRectangle>
+      12 7 29 27
+    </ScreenRectangle>
+    <IsPassible>true</IsPassible>
+    <Animations>
+      <Animation>
+        <Key>Idle</Key>
+        <Value>
+          <TexturePath>Buildings/Textures/Barricade</TexturePath>
+          <FrameSize>45 45</FrameSize>
+          <FrameCount>2</FrameCount>
+          <FrameDuration>0</FrameDuration>
+          <IsLooping>false</IsLooping>
+        </Value>
+      </Animation>
+      <Animation>
+        <Key>Shadow</Key>
+        <Value>
+          <TexturePath>Buildings/Textures/Barricade.Shadow</TexturePath>
+          <FrameSize>45 45</FrameSize>
+          <FrameDuration>0</FrameDuration>
+          <IsLooping>false</IsLooping>
+        </Value>
+      </Animation>
+    </Animations>
+    <InventoryColor>FFDAC40A</InventoryColor>
+    <UpgradeCosts>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>1</Nickel>
+        <Iron>1</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+    </UpgradeCosts>
+    <UpgradeData>
+      <Upgrade>
+        <MaxHealth>15</MaxHealth>
+      </Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+    </UpgradeData>
+  </Asset>
+</XnaContent>

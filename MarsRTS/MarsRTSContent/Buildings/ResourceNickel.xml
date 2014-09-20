@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<XnaContent>
+  <Asset Type="RTSAssetData.Buildings.BuildingProperties">
+    <Type>ResourceNickel</Type>
+    <Resource>Nickel</Resource>
+    <Description>Nickel Farmer</Description>
+    <IconTexture>HUD/Icons/Buildings/ResourceNickel</IconTexture>
+    <Category>Resource</Category>
+    <MaxLevel>9</MaxLevel>
+    <GridOffset>-50 -113</GridOffset>
+    <DepthPointOffset>63 122</DepthPointOffset>
+    <HealthBarOffset>9 -90</HealthBarOffset>
+    <HealthBarSize>100 8</HealthBarSize>
+    <GridBounds>0 0 3 3</GridBounds>
+    <ScreenRectangle>
+      57 29 104 109
+    </ScreenRectangle>
+    <Animations>
+      <Animation>
+        <Key>Idle</Key>
+        <Value>
+          <TexturePath>Buildings/Textures/ResourceNickel</TexturePath>
+          <FrameSize>242 242</FrameSize>
+          <FrameDuration>0</FrameDuration>
+          <IsLooping>false</IsLooping>
+        </Value>
+      </Animation>
+      <Animation>
+        <Key>Shadow</Key>
+        <Value>
+          <TexturePath>Buildings/Textures/Resource.Shadow</TexturePath>
+          <FrameSize>242 242</FrameSize>
+          <FrameCount>1</FrameCount>
+          <FrameDuration>0</FrameDuration>
+          <IsLooping>false</IsLooping>
+        </Value>
+      </Animation>
+    </Animations>
+    <InventoryColor>FFF5F5F5</InventoryColor>
+    <UpgradeCosts>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+    </UpgradeCosts>
+    <UpgradeData>
+      <Upgrade>
+        <MaxResourceBank>10000</MaxResourceBank>
+      </Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+    </UpgradeData>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{1691EA69-58A8-4461-91B5-441811095F8C}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MarsRTS</RootNamespace>
+    <AssemblyName>MarsRTS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaProfile>HiDef</XnaProfile>
+    <XnaCrossPlatformGroupID>32479132-0015-4e87-8c8a-73030d5fbd37</XnaCrossPlatformGroupID>
+    <XnaOutputType>Game</XnaOutputType>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>false</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>true</XnaCompressContent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Net">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LIB\BinaryHeap.cs" />
+    <Compile Include="LIB\Debug\DebugComponent.cs" />
+    <Compile Include="LIB\Extensions\Point.cs" />
+    <Compile Include="LIB\Extensions\Rectangle.cs" />
+    <Compile Include="LIB\Extensions\Vector2.cs" />
+    <Compile Include="LIB\GameObjects\Cursor.cs" />
+    <Compile Include="LIB\GameObjects\DisplayType.cs" />
+    <Compile Include="LIB\GameObjects\Entities\Bullet.cs" />
+    <Compile Include="LIB\GameObjects\Entities\Enemies\EnemyEntity.cs" />
+    <Compile Include="LIB\GameObjects\Entities\Enemies\IdleDirection.cs" />
+    <Compile Include="LIB\GameObjects\Entities\Entity.cs" />
+    <Compile Include="LIB\GameObjects\Entities\EntityType.cs" />
+    <Compile Include="LIB\GameObjects\Entities\Fixed\BuildingContextMenu.cs" />
+    <Compile Include="LIB\GameObjects\Entities\Fixed\BuildingEntity.cs" />
+    <Compile Include="LIB\GameObjects\Entities\Fixed\BuildingIcon.cs" />
+    <Compile Include="LIB\GameObjects\Entities\Fixed\BuildingStatDisplay.cs" />
+    <Compile Include="LIB\GameObjects\Entities\Fixed\ButtonState.cs" />
+    <Compile Include="LIB\GameObjects\Entities\Fixed\ContextMenuItem.cs" />
+    <Compile Include="LIB\GameObjects\Entities\Fixed\ResourceDisplay.cs" />
+    <Compile Include="LIB\GameObjects\Entities\HealthEntity.cs" />
+    <Compile Include="LIB\GameObjects\Entities\Fixed\MenuState.cs" />
+    <Compile Include="LIB\GameObjects\Entities\Projectile.cs" />
+    <Compile Include="LIB\GameObjects\Font.cs" />
+    <Compile Include="LIB\GameObjects\GridSpace.cs" />
+    <Compile Include="LIB\GameObjects\HealthBar.cs" />
+    <Compile Include="LIB\GameObjects\MarsWorld.cs" />
+    <Compile Include="LIB\GameObjects\GameplayDirector.cs" />
+    <Compile Include="LIB\GameObjects\Resource.cs" />
+    <Compile Include="LIB\GameObjects\ResourceBank.cs" />
+    <Compile Include="LIB\GameObjects\TileGrid.cs" />
+    <Compile Include="LIB\GameObjects\EntityBorder.cs" />
+    <Compile Include="LIB\GameObjects\WorldMode.cs" />
+    <Compile Include="LIB\Input\GamePadButton.cs" />
+    <Compile Include="LIB\Input\InputManager.cs" />
+    <Compile Include="LIB\Input\MouseButton.cs" />
+    <Compile Include="LIB\Map.cs" />
+    <Compile Include="LIB\PathFinding\AttackNode.cs" />
+    <Compile Include="LIB\PathFinding\PathNode.cs" />
+    <Compile Include="LIB\Screen\Camera.cs" />
+    <Compile Include="LIB\Screen\ScreenManager\GameScreen.cs" />
+    <Compile Include="LIB\Screen\ScreenManager\ScreenManager.cs" />
+    <Compile Include="LIB\Screen\ScreenManager\ScreenState.cs" />
+    <Compile Include="LIB\Screen\Screens\BaseLayoutManager.cs" />
+    <Compile Include="LIB\Screen\Screens\BuildingListScreen.cs" />
+    <Compile Include="LIB\Screen\Screens\BuildingScreen.cs" />
+    <Compile Include="LIB\Screen\Screens\Pause.cs" />
+    <Compile Include="LIB\Screen\Screens\Play.cs" />
+    <Compile Include="LIB\Animation.cs" />
+    <Compile Include="LIB\Screen\Screens\ScreenObjects\ButtonItem.cs" />
+    <Compile Include="LIB\Screen\Screens\ScreenObjects\Layout\InventoryPlacard.cs" />
+    <Compile Include="LIB\Screen\Screens\ScreenObjects\Upgrade\ResourceBox.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="MarsRTS.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RTSAssetData\RTSAssetData.csproj">
+      <Project>{9e72e2cc-d300-4f36-97fc-9bcd4045c71f}</Project>
+      <Name>RTSAssetData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MarsRTSContent\MarsRTSContent.contentproj">
+      <Name>MarsRTSContent %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+      <Project>{2716DD1B-139C-42BB-9575-BD0819BE48CC}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!--
+      To modify your build process, add your task inside one of the targets below and uncomment it. 
+      Other similar extension points exist, see Microsoft.Common.targets.
+      <Target Name="BeforeBuild">
+      </Target>
+      <Target Name="AfterBuild">
+      </Target>
+    -->
+</Project>

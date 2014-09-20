@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<XnaContent>
+  <Asset Type="RTSAssetData.Buildings.BuildingProperties">
+    <Type>LongRangeTower</Type>
+    <Description>Long Range Tower</Description>
+    <IconTexture>HUD/Icons/Buildings/LongRangeTower</IconTexture>
+    <Category>Defense</Category>
+    <MaxLevel>4</MaxLevel>
+    <MinRange>125</MinRange>
+    <GridOffset>-51 -144</GridOffset>
+    <DepthPointOffset>92 145</DepthPointOffset>
+    <HealthBarOffset>20 -75</HealthBarOffset>
+    <BarrelOffset>138 86</BarrelOffset>
+    <HealthBarSize>100 6</HealthBarSize>
+    <GridBounds>
+      0 0 4 4
+    </GridBounds>
+    <ScreenRectangle>
+      90 82 86 87
+    </ScreenRectangle>
+    <Animations>
+      <Animation>
+        <Key>Idle</Key>
+        <Value>
+          <TexturePath>Buildings/Textures/LongRangeTower.Animation</TexturePath>
+          <FrameSize>270 270</FrameSize>
+          <FrameCount>36</FrameCount>
+          <FrameDuration>40</FrameDuration>
+          <IsLooping>true</IsLooping>
+        </Value>
+      </Animation>
+      <Animation>
+        <Key>Shadow</Key>
+        <Value>
+          <TexturePath>Buildings/Textures/LongRangeTower.Shadow</TexturePath>
+          <FrameSize>270 270</FrameSize>
+          <FrameCount>36</FrameCount>
+          <FrameDuration>40</FrameDuration>
+          <IsLooping>true</IsLooping>
+        </Value>
+      </Animation>
+      <Animation>
+        <Key>Bullet</Key>
+        <Value>
+          <TexturePath>bullet</TexturePath>
+          <FrameSize>6 6</FrameSize>
+          <FrameDuration>0</FrameDuration>
+          <IsLooping>false</IsLooping>
+        </Value>
+      </Animation>
+    </Animations>
+    <Sounds>
+      <Sound>
+        <Key>Shoot</Key>
+        <Value>
+          <SoundPath>Buildings/Sounds/LongRangeTower.Shoot</SoundPath>
+        </Value>
+      </Sound>
+    </Sounds>
+    <InventoryColor>FF4F9EB8</InventoryColor>
+    <BarrelOffsets>
+      74 141
+      85 146
+      97 149
+      111 152
+      125 153
+      141 154
+      155 152
+      169 151
+      181 145
+      192 141
+      202 135
+      210 128
+      214 122
+      216 114
+      217 108
+      215 99
+      210 93
+      204 86
+      194 80
+      182 74
+      169 70
+      157 67
+      141 65
+      124 66
+      110 67
+      95 71
+      82 74
+      71 80
+      62 85
+      55 93
+      51 100
+      49 108
+      51 114
+      52 123
+      56 129
+      64 135
+    </BarrelOffsets>
+    <UpgradeCosts>
+      <Cost>
+        <Copper>5</Copper>
+        <Nickel>5</Nickel>
+        <Iron>5</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+    </UpgradeCosts>
+    <UpgradeData>
+      <Upgrade>
+        <Range>4000</Range>
+        <DefenseInterval>200</DefenseInterval>
+        <BulletSpeed>1000</BulletSpeed>
+        <Damage>120</Damage>
+        <AttackExplosionRange>40</AttackExplosionRange>
+        <MaxHealth>100</MaxHealth>
+      </Upgrade>
+      <Upgrade>
+        <Range>5000</Range>
+        <DefenseInterval>230</DefenseInterval>
+        <BulletSpeed>1400</BulletSpeed>
+        <Damage>175</Damage>
+        <AttackExplosionRange>45</AttackExplosionRange>
+        <MaxHealth>200</MaxHealth>
+      </Upgrade>
+      <Upgrade>
+        <Range>6000</Range>
+        <DefenseInterval>250</DefenseInterval>
+        <BulletSpeed>1000</BulletSpeed>
+        <Damage>120</Damage>
+        <AttackExplosionRange>40</AttackExplosionRange>
+        <MaxHealth>300</MaxHealth>
+      </Upgrade>
+      <Upgrade>
+        <Range>7000</Range>
+        <DefenseInterval>250</DefenseInterval>
+        <BulletSpeed>1000</BulletSpeed>
+        <Damage>120</Damage>
+        <AttackExplosionRange>40</AttackExplosionRange>
+        <MaxHealth>400</MaxHealth>
+      </Upgrade>
+      <Upgrade>
+        <Range>8000</Range>
+        <DefenseInterval>250</DefenseInterval>
+        <BulletSpeed>1000</BulletSpeed>
+        <Damage>120</Damage>
+        <AttackExplosionRange>40</AttackExplosionRange>
+        <MaxHealth>500</MaxHealth>
+      </Upgrade>
+    </UpgradeData>
+  </Asset>
+</XnaContent>

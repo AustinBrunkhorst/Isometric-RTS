@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<XnaContent>
+  <Asset Type="RTSAssetData.Enemies.EnemyProperties">
+    <Type>Basic</Type>
+    <PreferredCategory>Defense</PreferredCategory>
+    <HealthBarOffset>28 11</HealthBarOffset>
+    <TargetNodeOffset>-17 -36</TargetNodeOffset>
+    <DepthPointOffset>29 42</DepthPointOffset>
+    <AttackOffset>36 26</AttackOffset>
+    <WalkspeedRange>150 175</WalkspeedRange>
+    <Size>75 75</Size>
+    <HealthBarSize>16 3 </HealthBarSize>
+    <ScreenRectangle>31 18 12 28</ScreenRectangle>
+    <MaxHealth>800</MaxHealth>
+    <AttackInterval>1200</AttackInterval>
+    <AttackDamage>2</AttackDamage>
+    <Animations>
+      <Animation>
+        <Key>Idle</Key>
+        <Value>
+          <TexturePath>Enemies/Textures/Martian.1.Idle</TexturePath>
+          <FrameSize>75 75</FrameSize>
+          <FrameCount>8</FrameCount>
+          <FrameDuration>75</FrameDuration>
+          <IsLooping>true</IsLooping>
+        </Value>
+      </Animation>
+      <Animation>
+        <Key>Walk</Key>
+        <Value>
+          <TexturePath>Enemies/Textures/Martian.1.Walk</TexturePath>
+          <FrameSize>75 75</FrameSize>
+          <FrameCount>16</FrameCount>
+          <FrameDuration>75</FrameDuration>
+          <IsLooping>true</IsLooping>
+        </Value>
+      </Animation>
+      <Animation>
+        <Key>ShadowIdle</Key>
+        <Value>
+          <TexturePath>Enemies/Textures/Martian.Small.Idle.Shadow</TexturePath>
+          <FrameSize>75 75</FrameSize>
+          <FrameCount>8</FrameCount>
+          <FrameDuration>75</FrameDuration>
+          <IsLooping>true</IsLooping>
+        </Value>
+      </Animation>
+      <Animation>
+        <Key>ShadowWalk</Key>
+        <Value>
+          <TexturePath>Enemies/Textures/Martian.Small.Walk.Shadow</TexturePath>
+          <FrameSize>75 75</FrameSize>
+          <FrameCount>16</FrameCount>
+          <FrameDuration>75</FrameDuration>
+          <IsLooping>true</IsLooping>
+        </Value>
+      </Animation>
+    </Animations>
+  </Asset>
+</XnaContent>

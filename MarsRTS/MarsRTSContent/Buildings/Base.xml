@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<XnaContent>
+  <Asset Type="RTSAssetData.Buildings.BuildingProperties">
+    <Type>Base</Type>
+    <Description>Main Base</Description>
+    <IconTexture>HUD/Icons/Buildings/Base</IconTexture>
+    <Category>General</Category>
+    <MaxLevel>4</MaxLevel>
+    <GridOffset>-54 -268</GridOffset>
+    <DepthPointOffset>134 259</DepthPointOffset>
+    <HealthBarOffset>33 -69</HealthBarOffset>
+    <HealthBarSize>100 8</HealthBarSize>
+    <GridBounds>
+      0 0 6 8
+    </GridBounds>
+    <ScreenRectangle>
+      140 49 169 240
+    </ScreenRectangle>
+    <Animations>
+      <Animation>
+        <Key>Idle</Key>
+        <Value>
+          <TexturePath>Buildings/Textures/Base</TexturePath>
+          <FrameSize>500 500</FrameSize>
+          <FrameDuration>0</FrameDuration>
+          <IsLooping>false</IsLooping>
+        </Value>
+      </Animation>
+      <Animation>
+        <Key>Shadow</Key>
+        <Value>
+          <TexturePath>Buildings/Textures/Base.Shadow</TexturePath>
+          <FrameSize>500 500</FrameSize>
+          <FrameDuration>0</FrameDuration>
+          <IsLooping>false</IsLooping>
+        </Value>
+      </Animation>
+    </Animations>
+    <InventoryColor>FFC48383</InventoryColor>
+    <UpgradeCosts>
+      <Cost>
+        <Copper>0</Copper>
+        <Nickel>0</Nickel>
+        <Iron>0</Iron>
+      </Cost>
+      <Cost>
+        <Copper>0</Copper>
+        <Nickel>5</Nickel>
+        <Iron>0</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+      <Cost>
+        <Copper>1</Copper>
+        <Nickel>2</Nickel>
+        <Iron>3</Iron>
+      </Cost>
+    </UpgradeCosts>
+    <UpgradeData>
+      <Upgrade>
+        <Description></Description>
+        <MaxHealth>400</MaxHealth>
+      </Upgrade>
+      <Upgrade>
+        <Description>Adds the ability to use the Base Layout Manager</Description>
+        <MaxHealth>600</MaxHealth>
+      </Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+      <Upgrade></Upgrade>
+    </UpgradeData>
+  </Asset>
+</XnaContent>
