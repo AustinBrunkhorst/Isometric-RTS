@@ -5,9 +5,7 @@ namespace RTSAssetData
 {
     public class SoundData
     {
-        private SoundEffect sound;
-
-        private string soundPath;
+        SoundEffect sound;
 
         [ContentSerializerIgnore]
         public SoundEffect Sound
@@ -16,8 +14,10 @@ namespace RTSAssetData
             set { sound = value; }
         }
 
+        string soundPath;
+
         /// <summary>
-        ///     Asset path for the sound
+        /// Asset path for the sound
         /// </summary>
         public string SoundPath
         {
@@ -27,7 +27,7 @@ namespace RTSAssetData
 
         public void Load(ContentManager content)
         {
-            sound = content.Load<SoundEffect>(soundPath);
+            this.sound = content.Load<SoundEffect>(soundPath);
         }
     }
 }

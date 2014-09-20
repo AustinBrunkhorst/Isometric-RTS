@@ -1,19 +1,23 @@
-using System;
-using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
+using System;
+using System.Collections.Generic;
 
 namespace RTSAssetData.Buildings
 {
     /// <summary>
-    ///     Represents various building properties
-    /// </summary>  public struct BuildingProperties
+    /// Represents various building properties
+    /// </summary>
+    public struct BuildingProperties
     {
-  
+        Building type;
+
         /// <summary>
-        ///     Represents offsets for each frame to shoot bullets from on
-        ///     defensive buildings
-        /// </summary>urn type; }
+        /// Building type
+        /// </summary>
+        public Building Type
+        {
+            get { return type; }
             set { type = value; }
         }
 
@@ -47,87 +51,104 @@ namespace RTSAssetData.Buildings
         {
             get { return iconTexture; }
             set { iconTexture = value; }
-      /// <summary>
-        ///     Building type
-        /// </summary>        /// Category this building belongs in
-        //// <summary>
-        ///     Building resource type (if applicable)
-        /// </summary>category; }
+        }
+
+        BuildingCategory category;
+
+        /// <summary>
+        /// Category this building belongs in
+        /// </summary>
+        public BuildingCategory Category
+        {
+            get { return category; }
             set { category = value; }
         }
 
         int level, maxLevel, minRange;
 
-   /// <summary>
-        ///     Building description
-        /// </summary>y>
-        [ContentSerializerIgnore]
-        public int Lev/// <summary>
-        ///     Texture path for this building's HUD icon
+        /// <summary>
+        /// Current upgrade level
         /// </summary>
+        [ContentSerializerIgnore]
+        public int Level
+        {
+            get { return level; }
+            set { level = value; }
+        }
 
         /// <summary>
         /// Maximum upgrade level
-/// <summary>
-        ///     Category this building belongs in
-        /// </summary> maxLevel; }
+        /// </summary>
+        public int MaxLevel
+        {
+            get { return maxLevel; }
             set { maxLevel = value; }
         }
 
-  /// <summary>
-        ///     Current upgrade level
-        /// </summary>emies
+        /// <summary>
+        /// Minimum range for a building to shoot at enemies
         /// </summary>
         [ContentSerializer(Optional = true)]
         public int MinRange
         {
             get { return minRange; }
-           /// <summary>
-        ///     Maximum upgrade level
-        /// </summary>intOffset, healthBarOffset,
+            set { minRange = value; }
+        }
+
+        Vector2 gridOffset, depthPointOffset, healthBarOffset,
             projectileOffset, barrelOffset;
 
         /// <summary>
-        /// Animation position offset in /// <summary>
-        ///     Minimum range for a building to shoot at enemies
-        /// </summary>ridOffset; }
+        /// Animation position offset in world
+        /// </summary>
+        public Vector2 GridOffset
+        {
+            get { return gridOffset; }
             set { gridOffset = value; }
         }
 
         /// <summary>
-        ///// <summary>
-        ///     Animation position offset in world
-        /// </summary>DepthPointOffset
+        /// Offset to compare building for sorting
+        /// </summary>
+        public Vector2 DepthPointOffset
         {
             get { return depthPointOffset; }
             set { depthPointOffset = value; }
         }
 
-        /// <su/// <summary>
-        ///     Offset to compare building for sorting
-        /// </summary>public Vector2 HealthBarOffset
+        /// <summary>
+        /// Offset to draw the building's healthbar
+        /// </summary>
+        public Vector2 HealthBarOffset
         {
             get { return healthBarOffset; }
             set { healthBarOffset = value; }
         }
 
-        /// <summary>/// <summary>
-        ///     Offset to draw the building's healthbar
-        /// </summary>ContentSerializer(Optional = true)]
+        /// <summary>
+        /// Offset to emit projectiles from this building
+        /// </summary>
+        [ContentSerializer(Optional = true)]
         public Vector2 ProjectileOffset
         {
             get { return projectileOffset; }
-            set { projectileOf/// <summary>
-        ///     Offset to emit projectiles from this building
-        /// </summary>he building and an enemy
+            set { projectileOffset = value; }
+        }
+
+        /// <summary>
+        /// Offset to calculate angle between the building and an enemy
         /// </summary>
         [ContentSerializer(Optional = true)]
         public Vector2 BarrelOffset
         {
             get { return barrelOffset; }
-            set { barrelOffs/// <summary>
-        ///     Offset to calculate angle between the building and an enemy
-        /// </summary>g's healthbar
+            set { barrelOffset = value; }
+        }
+
+        Point healthBarSize;
+
+        /// <summary>
+        /// Size of the building's healthbar
         /// </summary>
         public Point HealthBarSize
         {
@@ -135,49 +156,61 @@ namespace RTSAssetData.Buildings
             set { healthBarSize = value; }
         }
 
-        Rectangl/// <summary>
-        ///     Size of the building's healthbar
-        /// </summary>at this building consumes
+        Rectangle gridBounds, screenRectangle;
+
+        /// <summary>
+        /// Bounds in world that this building consumes
         /// </summary>
         public Rectangle GridBounds
         {
             get { return gridBounds; }
-            set { /// <summary>
-        ///     Bounds in world that this building consumes
-        /// </summary>ng the visible bounding rectangle on
+            set { gridBounds = value; }
+        }
+
+        /// <summary>
+        /// Rectangle offset representing the visible bounding rectangle on
         /// screen
         /// </summary>
         public Rectangle ScreenRectangle
         {
-            get {/// <summary>
-        ///     Rectangle offset representing the visible bounding rectangle on
-        ///     screen
-        /// </summary>    /// Determines if this building will make the bounds in world that 
+            get { return screenRectangle; }
+            set { screenRectangle = value; }
+        }
+
+        bool isPassible;
+
+        /// <summary>
+        /// Determines if this building will make the bounds in world that 
         /// it consumes passible
         /// </summary>
-        [ContentSerializer(Optional /// <summary>
-        ///     Determines if this building will make the bounds in world that
-        ///     it consumes passible
-        /// </summary>/// <summary>
+        [ContentSerializer(Optional = true)]
+        public bool IsPassible
+        {
+            get { return isPassible; }
+            set { isPassible = value; }
+        }
+
+        /// <summary>
         /// Represents offsets for each frame to shoot bullets from on 
-        /// defe/// <summary>
-        ///     Upgrade data for the current level
-        /// </summary>      public Vector2[] BarrelOffsets;
+        /// defensive buildings
+        /// </summary>
+        [ContentSerializer(Optional = true)]
+        public Vector2[] BarrelOffsets;
 
         [ContentSerializer(ElementName = "UpgradeCosts", CollectionItemName = "Cost")]
         EntityCost[] upgradeCosts;
-/// <summary>
-        ///     Building animations
-        /// </summary>me = "Upgrade")]
+
+        [ContentSerializer(ElementName = "UpgradeData", CollectionItemName = "Upgrade")]
         BuildingUpgradeData[] upgradeData;
 
         /// <summary>
         /// Upgrade data for the current level
         /// </summary>
         [ContentSerializerIgnore]
-        public BuildingUpgradeData UpgradeDat/// <summary>
-        ///     Building sounds
-        /// </summary>}
+        public BuildingUpgradeData UpgradeData
+        {
+            get { return upgradeData[level]; }
+        }
 
         Dictionary<string, AnimationData> animations;
 
@@ -185,9 +218,10 @@ namespace RTSAssetData.Buildings
         /// Building animations
         /// </summary>
         [ContentSerializer(CollectionItemName = "Animation")]
-        public Dictionary<strin/// <summary>
-        ///     Color this building will be represented with in inventory
-        /// </summary>value; }
+        public Dictionary<string, AnimationData> Animations
+        {
+            get { return animations; }
+            set { animations = value; }
         }
 
         Dictionary<string, SoundData> sounds;
@@ -195,48 +229,57 @@ namespace RTSAssetData.Buildings
         /// <summary>
         /// Building sounds
         /// </summary>
-        [Con/// <summary>
-        ///     Gets the cost of an upgrade
-        /// </summary>
-        /// <param name="level">
-        ///     Target upgrade level. -1 uses the next level's
-        ///     cost
-        /// </param>lor inventoryColor;
+        [ContentSerializer(Optional = true, CollectionItemName = "Sound")]
+        public Dictionary<string, SoundData> Sounds
+        {
+            get { return sounds; }
+            set { sounds = value; }
+        }
+
+        Color inventoryColor;
 
         /// <summary>
         /// Color this building will be represented with in inventory
         /// </summary>
-        public Color In/// <summary>
-        ///     Get building upgrade data
+        public Color InventoryColor
+        {
+            get { return inventoryColor; }
+            set { inventoryColor = value; }
+        }
+
+        /// <summary>
+        /// Gets the cost of an upgrade
         /// </summary>
-        /// <param name="level">
-        ///     Target upgrade level. -1 uses the next
-        ///     upgrade level
-        /// </param>/// <param name="level"> Target upgrade level. -1 uses the next level's
+        /// <param name="level"> Target upgrade level. -1 uses the next level's
         /// cost </param>
         public EntityCost GetUpgradeCost(int level = -1)
         {
-   /// <summary>
-        ///     Upgrades this building
-        /// </summary>
-        /// <param name="newLevel"> Target level if any </param>
+            return upgradeCosts[level == -1 ? this.level + 1 : level];
+        }
+
+        /// <summary>
+        /// Get building upgrade data
         /// </summary>
         /// <param name="level"> Target upgrade level. -1 uses the next 
         /// upgrade level </param>
         public BuildingUpgradeData GetUpgradeData(int level = -1)
-/// <summary>
-        ///     Load animation textures
-        /// </summary>
-        /// <param name="content"> Content manager </param>this building
+        {
+            return upgradeData[level == -1 ? this.level + 1 : level];
+        }
+
+        /// <summary>
+        /// Upgrades this building
         /// </summary>
         /// <param name="newLevel"> Target level if any </param>
         public void Upgrade(int newLevel = -1)
         {
             level = (newLevel == -1) ?
-                Mat/// <summary>
-        ///     Loads building sounds
+                Math.Min(maxLevel - 1, level + 1) : newLevel;
+        }
+
+        /// <summary>
+        /// Load animation textures
         /// </summary>
-        /// <param name="content"> Content manager </param>y>
         /// <param name="content"> Content manager </param>
         public void LoadAnimations(ContentManager content)
         {

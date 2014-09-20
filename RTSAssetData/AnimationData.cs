@@ -10,35 +10,43 @@ namespace RTSAssetData
 
         /// <summary>
         /// Content path to the animation's texture
-        ///// <summary>
-        ///     Content path to the animation's texture
-        /// </summary>th; }
+        /// </summary>
+        public string TexturePath
+        {
+            get { return texturePath; }
             set { texturePath = value; }
         }
 
         Point frameSize;
 
         /// <summary>
-        /// Size in pixels of each anim/// <summary>
-        ///     Size in pixels of each animation frame
-        /// </summary>et { return frameSize; }
+        /// Size in pixels of each animation frame
+        /// </summary>
+        public Point FrameSize
+        {
+            get { return frameSize; }
             set { frameSize = value; }
         }
 
         int frameCount, frameDuration;
 
         /// <summary>
- /// <summary>
-        ///     Number of frames in this animation
-        /// </summary>rializer(Optional = true)]
+        /// Number of frames in this animation
+        /// </summary>
+        [ContentSerializer(Optional = true)]
         public int FrameCount
         {
-            get { return frameCou/// <summary>
-        ///     Duration in milliseconds for each animation frame
-        /// </summary> in milliseconds for each animation frame
-        /// </sum/// <summary>
-        ///     Determines if the animation loops or not
-        /// </summary>            set { frameDuration = value; }
+            get { return frameCount; }
+            set { frameCount = value; }
+        }
+
+        /// <summary>
+        /// Duration in milliseconds for each animation frame
+        /// </summary>
+        public int FrameDuration
+        {
+            get { return frameDuration; }
+            set { frameDuration = value; }
         }
 
         bool isLooping;
@@ -47,10 +55,14 @@ namespace RTSAssetData
         /// Determines if the animation loops or not
         /// </summary>
         public bool IsLooping
-        {/// <summary>
-        ///     Load animation texture data
-        /// </summary>
-        /// <param name="content"> Content manager </param>ializerIgnore]
+        {
+            get { return isLooping; }
+            set { isLooping = value; }
+        }
+
+        Texture2D texture;
+
+        [ContentSerializerIgnore]
         public Texture2D Texture
         {
             get { return texture; }

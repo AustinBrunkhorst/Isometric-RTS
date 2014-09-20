@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using RTSAssetData.Buildings;
+using System.Collections.Generic;
 
 namespace RTSAssetData.Enemies
 {
@@ -23,87 +23,102 @@ namespace RTSAssetData.Enemies
         public BuildingCategory PreferredCategory
         {
             get { return preferredCategory; }
-            set /// <summary>
-        ///     Building category that this enemy will target with priority
-        /// </summary>
+            set { preferredCategory = value; }
+        }
+
+        Vector2 healthBarOffset, targetNodeOffset, depthPointOffset,
             attackOffset;
 
         /// <summary>
-        /// Offset to dr/// <summary>
-        ///     Offset to draw the building's healthbar
-        /// </summary>       {
+        /// Offset to draw the building's healthbar
+        /// </summary>
+        public Vector2 HealthBarOffset
+        {
             get { return healthBarOffset; }
             set { healthBarOffset = value; }
         }
 
         /// <summary>
-        /// Offset for targe/// <summary>
-        ///     Offset for target node positions
-        /// </summary>    {
+        /// Offset for target node positions
+        /// </summary>
+        public Vector2 TargetNodeOffset
+        {
             get { return targetNodeOffset; }
             set { targetNodeOffset = value; }
         }
 
         /// <summary>
-        /// Offset to compare en/// <summary>
-        ///     Offset to compare enemy for depth sorting
-        /// </summary>{
+        /// Offset to compare enemy for depth sorting
+        /// </summary>
+        public Vector2 DepthPointOffset
+        {
             get { return depthPointOffset; }
             set { depthPointOffset = value; }
         }
 
         /// <summary>
-        /// Offset for buildings to /// <summary>
-        ///     Offset for buildings to shoot at
-        /// </summary>       get { return attackOffset; }
+        /// Offset for buildings to shoot at
+        /// </summary>
+        public Vector2 AttackOffset
+        {
+            get { return attackOffset; }
             set { attackOffset = value; }
         }
 
         Point walkspeedRange, size, healthBarSize;
 
-        //// <summary>
-        ///     Min/Max walk speeds (x = min, y = max)
-        /// </summary>     public Point WalkspeedRange
+        /// <summary>
+        /// Min/Max walk speeds (x = min, y = max)
+        /// </summary>
+        public Point WalkspeedRange
         {
             get { return walkspeedRange; }
             set { walkspeedRange = value; }
         }
 
-        /// </// <summary>
-        ///     Size of this enemy's screen rectangle
-        /// </summary> public Point Size
+        /// <summary>
+        /// Size of this enemy's screen rectangle
+        /// </summary>
+        public Point Size
         {
             get { return size; }
             set { size = value; }
         }
 
-        /// <summ/// <summary>
-        ///     Size of the enemie's healthbar
-        /// </summary>lic Point HealthBarSize
+        /// <summary>
+        /// Size of the enemie's healthbar
+        /// </summary>
+        public Point HealthBarSize
         {
             get { return healthBarSize; }
             set { healthBarSize = value; }
         }
 
-        Rectangle scr/// <summary>
-        ///     Screen rectangle offset for the enemy
-        /// </summary>       /// </summary>
+        Rectangle screenRectangle;
+
+        /// <summary>
+        /// Screen rectangle offset for the enemy
+        /// </summary>
         public Rectangle ScreenRectangle
         {
             get { return screenRectangle; }
             set { screenRectangle = value; }
-/// <summary>
-        ///     Represents the max health of this entity
-        /// </summary>       /// Represents the max health of this entity
-     /// <summary>
-        ///     Interval in milliseconds the enemy attacks
-        /// </summary> }
+        }
+
+        float maxHealth, attackInterval, attackDamage;
+
+        /// <summary>
+        /// Represents the max health of this entity
+        /// </summary>
+        public float MaxHealth
+        {
+            get { return maxHealth; }
             set { maxHealth = value; }
         }
 
-      /// <summary>
-        ///     Damage dealt each attack
-        /// </summary>  /// </summary>
+        /// <summary>
+        /// Interval in milliseconds the enemy attacks
+        /// </summary>
         public float AttackInterval
         {
             get { return attackInterval; }

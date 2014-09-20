@@ -3,13 +3,11 @@
 namespace RTSAssetData
 {
     /// <summary>
-    ///     Represents the cost in resources of any entity
+    /// Represents the cost in resources of any entity
     /// </summary>
     public struct EntityCost
     {
-        private int copper;
-        private int iron;
-        private int nickel;
+        int copper, nickel, iron;
 
         public int Copper
         {
